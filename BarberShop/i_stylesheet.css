@@ -1,0 +1,363 @@
+html,body
+{
+    padding:0;
+    margin:0;
+	text-transform:uppercase;
+	font-family:"PT Sans Narrow";
+	font-weight:bold;
+	background:url(img/backgrount-index.jpg);
+}
+.header
+{
+  width:100%;
+  height:62px;
+  background-color:black;
+  border-top:10px solid black;
+  border-bottom:3px solid #242424;
+}
+.clear{clear:both;}
+.centre-layout-wrapper
+{
+  width:960px;
+  margin:0 auto;
+}
+.top-menu>li>a
+{
+  text-decoration:none;
+  font-size:16px;
+  color:white;
+  padding-top:25px;
+  padding-bottom:25px;
+  padding-right:20px;
+  padding-left:20px;
+}
+.top-menu>li>a:hover
+{
+  background-color:#242424;
+}
+.top-menu>li
+{
+  display:inline;
+}
+.top-menu a.active{
+    box-shadow:0 25px 0 -20px white;
+}
+.top-menu
+{
+  margin-left:-20px;
+}
+.account-menu
+{
+  float:right;
+  margin-top:-50px;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-right:20px;
+  padding-left:20px;
+}
+.account-menu>a
+{
+  text-decoration:none;
+  color:white;
+}
+.logo
+{
+  width:370px;
+  margin:0 auto;
+  padding-top:60px;  
+}
+.features{
+    margin:50px 0;
+    padding:0;
+    list-style:none;
+    color:white;
+}
+.features:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.features li{
+    float:left;
+    width:300px;
+    margin-right:20px;
+    text-align:center;
+}
+.features li:last-child{
+    margin-right:0;
+}
+.feature-title{
+    position:relative;
+    font-size:30px;
+    text-transform:uppercase;
+    font-weight:bold;
+    margin-bottom:80px;
+}
+.feature-title:after{
+    content:'';
+    position:absolute;
+    bottom:-50px;
+    left:50%;
+    margin-left:-15px;
+    width:30px;
+    height:30px;
+    background:url('img/romb-title.png') no-repeat 0 0;
+}
+.features p{
+    margin:0 10px;
+    font-size:14px;
+    text-transform:uppercase;
+    line-height:24px;
+    font-weight:bold;
+}
+
+.login-popup{
+    display:none;
+    position:absolute;
+    top:30px;
+    left:50%;
+    width:300px;
+    min-height:200px;
+    padding:50px 80px;
+    margin-left:-230px;
+    background:white;
+}
+.login-popup-show{
+  display:block;
+}
+.login-form{
+    font-weight:bold;
+    font-size:14px;
+    text-transform:uppercase;
+}
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="submit"]{
+    display:block;
+    font-weight:bold;
+    font-size:14px;
+    font-family:"PT Sans Narrow", sans-serif;
+    text-transform:uppercase;
+}    
+.login-form input[type="text"],
+.login-form input[type="password"]{
+    width:241px;
+    margin-bottom:10px;
+    padding:12px 15px;
+    padding-right:40px;
+    border:2px solid black;
+    color:black;    
+    background-color:#f9f6f3;
+}
+.login-form input[type="password"]{
+    margin-bottom:15px;
+}
+.login-form .login-field{
+    background:url('img/icon-user.png') no-repeat 270px 14px;
+}
+.login-form .password-field{
+    background:url('img/icon-lock.png') no-repeat 270px 14px;
+}
+.login-form .restore{
+    float:right;
+    color:black;
+}
+.login-form input[type="checkbox"]{
+    vertical-align:middle;
+    margin-right:5px;
+}
+.login-form input[type="submit"]{
+    width:300px;
+    margin-top:15px;
+    padding:14px 0;
+    border:none;
+    color:white;    
+    background-color:black;
+}
+
+
+
+.index-section
+{
+  position:relative;
+  background:url(img/backgrount-news.jpg);
+  margin-top:35px;
+}
+.line
+{
+  position:absolute;
+  top:60px;
+  left:470px;
+}
+.index-left-column
+{
+  float:left;
+  margin-right:120px;
+  margin-left:80px;
+  width:350px;
+  padding-top:55px;
+  padding-bottom:55px;
+  font-size:14px;
+}
+.index-section-title
+{
+  font-size:30px;
+}
+.index-news
+{
+  list-style:none;
+  margin-bottom: 50px;
+  padding: 0;
+}
+.index-news>li
+{margin-top:30px;}
+.index-news>li>a
+{
+  text-decoration:none;
+  color:black;
+  font-size:14px;
+}
+.date
+{
+  font-family:"Georgia";
+  text-transform:lowercase;
+  font-size:14px;
+  font-style:italic;
+  font-weight:normal;
+}
+.btn
+{
+  text-decoration:none;
+  color:white;
+  background-color:black;
+  padding-left:35px;
+  padding-right:35px;
+  padding-top:16px;
+  padding-bottom:16px;
+}
+.btn-prev,.btn-next
+{  text-decoration:none;
+  color:white;
+  background-color:black;
+  padding-left:54px;
+  padding-right:54px;
+  padding-top:16px;
+  padding-bottom:16px;
+}
+.index-right-column
+{
+  float:left;
+  width:400px;
+  padding-top:55px;
+  padding-bottom:55px;
+  font-size:14px;
+}
+.index-right-column>p
+{
+  font-size:14px;
+  line-height:24px;
+}
+.gallery-items
+{
+  margin-top:30px;
+}
+.gallery-controls
+{
+   margin-top:40px;
+}
+.contacts-address
+{
+  font-size:14px;
+  width:350px;
+  margin-bottom:20px;
+}
+.contacts-address>p
+{
+  line-height:24px;
+}
+.contacts-work-time
+{margin-bottom:65px;}
+.contacts-work-time>p
+{
+   line-height:24px;
+}
+#orderForm input[type="text"],#orderForm input[type="submit"]
+{
+    text-transform:uppercase;
+	font-family:"PT Sans Narrow", sans-serif;
+	font-weight:bold;
+    font-size:14px;
+}
+#orderForm input[type="text"]
+{
+    width:81px;
+    margin-bottom:20px;
+	margin-right:20px;
+    padding:12px 15px;
+    padding-right:40px;
+    border:2px solid black;
+    color:black;    
+    background-color:#f9f6f3;
+	
+	display:inline;
+}
+#orderForm input[type="submit"]
+{
+    width:300px;
+    margin-top:15px;
+    border:none;
+    color:white;   	
+    background-color:black;
+}
+.footer{
+    margin-top:70px;
+	background-image:url("img/footer.png");
+	background-repeat: repeat-x repeat-y;
+	-moz-box-shadow:inset 0px 30px 22px -10px #000000 ;
+	-webkit-box-shadow:inset 0px 30px 22px -10px #000000 ;
+	 box-shadow:inset 0px 30px 22px -10px #000000 ;
+    color:#ffffff;
+    padding-top:58px;
+	font-size:14px;
+	height:150px;
+}
+.footer .centre-layout-wrapper:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.f-contacts-address{
+    float:left;
+    line-height:25px;
+    margin-right:148px;
+	margin-top:15px;
+}
+.f-contacts-address p
+{margin:0}
+
+.social-buttons{
+    float:left;
+}
+
+.copyright{
+    float:right;
+}
+.copyright p,.social-buttons p{
+    text-align: center;
+    padding-bottom:7px;
+}
+.copyright-button{
+    display:block;
+    color:#ffffff;
+    text-decoration:none;
+    background-color:#000000;
+    padding:15px 28px;
+}
+.social-buttons>a:hover
+{
+  background-color:#242424;
+}
+.btn-prev:hover,.btn-next:hover,.btn:hover,.copyright-button:hover,#orderForm input[type="submit"]:hover{
+    color:#000000;
+    background-color:#ffffff;
+}

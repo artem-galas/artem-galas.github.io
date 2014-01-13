@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BarberShop</title>
+    <link type="text/css" rel="stylesheet" href="i_stylesheet.css"/>
+	
+  </head>
+  <body>
+    <div class="header">
+	  <div class="centre-layout-wrapper">
+	     <ul class="top-menu">
+           <li><a  class="active" href="index.html">Главная</a></li>
+           <li><a href="#">Информация</a></li>
+           <li><a href="#">Новости</a></li>
+           <li><a href="price/index.html">Прайс-лист</a></li>
+           <li><a href="shop/index.html">Магазин</a></li>
+           <li><a href="#">Контакты</a></li>
+          </ul>
+		 <div class="account-menu">
+           <a class="account-menu-enter" href="#">Вход</a>
+         </div>
+        </div>
+	  </div>
+	   <div class="centre-layout-wrapper">
+            <div class="logo"><a href="#"><img src="img/barbershop_logo.png"/></a></div>
+            <ul class="features">
+                <li>
+                    <div class="feature-title">Быстро</div>
+                    <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладетель стильной стрижки-минутки!</p>
+                </li>
+                <li>
+                    <div class="feature-title">Круто</div>
+                    <p>Забудьте, как вы стриглись раньше.<br>Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+                </li>
+                <li>
+                    <div class="feature-title">Дорого</div>
+                    <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
+                </li>
+            </ul>
+			<div class="login-popup">
+            <form class="login-form" action="/auth" method="post">
+                <input class="login-field" type="text" name="login" placeholder="Логин">
+                <input class="password-field" type="password" name="password" placeholder="Пароль">
+                <a class="restore" href="/restore">Я забыл пароль</a>
+                <label><input type="checkbox" name="remember"> Запомните меня</label>                
+                <input type="submit" value="Войти">
+            </form>
+			</div>
+			<script>
+            var link = document.querySelector('.account-menu-enter');
+            var form = document.querySelector('.login-popup');
+            
+            link.addEventListener('click', function(event) {
+              event.preventDefault();
+              if (form.classList.contains('login-popup-show')) {
+                form.classList.remove('login-popup-show');
+              } else {
+                form.classList.add('login-popup-show');
+              }
+            }, false);            
+        </script>
+            <div class="index-section">
+                <div class="index-left-column">
+                    <div class="index-section-title">Новости</div>
+                    <ul class="index-news">
+                        <li>
+                            <a href="#">Мы наконец завезли Ягермейстер! Теперь вы можете пропустить стаканчик во время стрижки</a>
+                            <br><span class="date">25 сентября</span><br>
+                        </li>
+                        <li>
+                            <a href="#">В нашей команде пополнение, Борис «Бритва» Стригунец, обладетель множетсва титулов и наград пополнил наши стройные ряды</a>
+                            <br><span class="date">19 сентября</span></br>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn">Все новости</a>
+                </div>
+				<img class="line" src="img/line-section.png"/>
+                <div class="index-right-column">
+                    <div class="index-section-title">Фотогалерея</div>
+                    <div class="gallery">
+                        <div class="gallery-items">
+                            <div class="gallery-item"><img src="img/photo-galary.jpg" alt="Интерьер"></div>
+                        </div>
+                        <div class="gallery-controls">
+                            <a href="#" class="btn-prev">Назад</a>
+                            <a href="#" class="btn-next">Вперед</a>
+                        </div>
+                    </div>
+                </div>
+				<div class="clear"></div>
+            </div>
+
+            <div class="index-section">
+                <div class="index-left-column">
+                    <div class="index-section-title">Контактная информация</div>
+                    <div class="contacts-address">
+                        <p><strong>Barbershop «Borodinski»</strong>
+                        <br>Адрес: г. Москва, ул. Собаки Павлова, д. 13
+                        <br>Телефон: +7 (495) 666-02-666</p>
+                    </div>
+                    <div class="contacts-work-time">
+                        <p>Время работы: <br> пн — пт: с 10:00 до 22:00 <br> сб — вс: с 10:00 до 19:00</p>
+                    </div>
+                    <a href="#" class="btn">Как проехать</a>
+                    <a href="#" class="btn">Обратная связь</a>
+                </div>
+				<img class="line" src="img/line-section.png"/>
+                <div class="index-right-column">
+                    <div class="index-section-title">Записаться</div>
+					<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ <br> С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+                    <form  action="#" method="post" id="orderForm">
+                            <input type="text" name="date" placeholder="Дата"> 
+                            <input type="text" name="time" placeholder="Время">
+                            <input type="text" name="name" placeholder="Ваше имя"> 
+                            <input type="text" name="phone" placeholder="Телефон">
+                            <input type="submit" class="btn" value="Отправить">
+                        
+                    </form>
+                </div>
+				<div class="clear"></div>
+            </div>
+        </div>
+	
+	   <div class="footer">
+            <div class="centre-layout-wrapper">
+                <div class="f-contacts-address">
+                    <p><strong>Barbershop «Borodinski»</strong></p>
+                    <p>Адрес: г. Москва, ул. Собаки Павлова, д. 13</p>
+                    <p>Телефон: +7 (495) 666-02-666</p>
+                </div>
+                <div class="social-buttons">
+                    <p>Давайте дружить!</p>
+                    <a href="#"><img src="img/vk-social-button.png"></a>
+                    <a href="#"><img src="img/fb-social-button.png"></a>
+                    <a href="#"><img src="img/insta-social-button.png"></a>   
+                </div>
+                <div class="copyright">
+                    <p>Дизайн сайта:</p>
+                    <a class="copyright-button" href="#">Gluhanko.ru</a>
+                </div>
+            </div>
+        </div>
+  </body>
+</html>
